@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos del Mouse</title>
+        <style>
+            p{
+                font-size: 20px;
+                color: blue;
+                line-height: 0px;
+            }
+            input[type = "text"]{
+                background-color:white;
+                color: green;
+                border-color: green;
+            }
+            input[type = "button" ]{
+                background-color: white;
+                color: blue;
+                border-color: green;
+                font-family: arial;
+                font-size: 15px;
+                border-width: 5px;
+                border-radius: 15px;
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+           Elige el color de la pluma.  <input type="color" id="colorUsuario"/> <br>
+           Elige el ancho de la pluma. <input type="text" size="3" id="anchoLineas">
+           <input type="button" value= "Accept" id="botoncito">
+        </p>
+        <canvas width="300" height="300" id="areaDibujo"></canvas>
+        <p>Dibuja con el mouse sobre el Lienzo sin salirte del Marco.</p>
+        <script src = "code.js"></script>
+    </body>
+</html>
